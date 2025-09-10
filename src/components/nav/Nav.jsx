@@ -15,15 +15,29 @@ function Nav() {
   return (
     <div className="navContainer">
       <div className="title">
-        <h2>Ecommerce-App</h2>
+        <img
+          style={{ color: "white" }}
+          src="https://png.pngtree.com/png-clipart/20221001/original/pngtree-shopping-logo-design-for-online-store-website-png-image_8647300.png"
+          width={270}
+          height={70}
+        />
       </div>
       <div className="links">
         <Link to="/">Home</Link>
         <Link to="/products">Products</Link>
-        <Link to="/mens">Menswear</Link>
-        <Link to="/womens">Womenswear</Link>
-        <Link to="/kids">Kidswear</Link>
-        <button className="btn btn-outline-danger me-5" onClick={logout}>
+        <Link to="/mens">Mens</Link>
+        <Link to="/womens">Womens</Link>
+        <Link to="/kids">Kids</Link>
+      </div>
+      <div className="thirdPanel">
+        <Link to="/profile">
+          <i class="bi icon bi-person-circle"></i>
+        </Link>
+        <Link to="/carts">Cart</Link>
+        <button
+          className="btn btn-danger text-white fw-bold me-5"
+          onClick={logout}
+        >
           Logout
         </button>
       </div>

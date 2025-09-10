@@ -1,5 +1,5 @@
 const initialData = {
-  isLoggedIn: true,
+  isLoggedIn: false,
 };
 const loginReducer = (state = initialData, action) => {
   switch (action.type) {

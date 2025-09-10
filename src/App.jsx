@@ -5,8 +5,9 @@ import { useSelector } from "react-redux";
 
 function App() {
   let isLoggedIn = useSelector((storedata) => {
-    return storedata.isLoggedIn;
+    return storedata.loginReducer.isLoggedIn;
   });
+
   return (
     <div>
       {isLoggedIn ? <Nav /> : null}
